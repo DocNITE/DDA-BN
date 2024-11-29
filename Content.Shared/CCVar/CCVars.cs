@@ -1794,7 +1794,7 @@ namespace Content.Shared.CCVar
             CVarDef.Create("viewport.minimum_width", 15, CVar.REPLICATED);
 
         public static readonly CVarDef<int> ViewportMaximumWidth =
-            CVarDef.Create("viewport.maximum_width", 21, CVar.REPLICATED);
+            CVarDef.Create("viewport.maximum_width", 15, CVar.REPLICATED);
 
         public static readonly CVarDef<int> ViewportWidth =
             CVarDef.Create("viewport.width", 21, CVar.CLIENTONLY | CVar.ARCHIVE);
@@ -2656,12 +2656,12 @@ namespace Content.Shared.CCVar
             CVarDef.Create("vote.autovote_enabled", false, CVar.SERVERONLY);
 
         /// Automatically starts a map vote when returning to the lobby.
-        /// Requires auto voting to be enabled.  
+        /// Requires auto voting to be enabled.
         public static readonly CVarDef<bool> MapAutoVoteEnabled =
             CVarDef.Create("vote.map_autovote_enabled", true, CVar.SERVERONLY);
 
         /// Automatically starts a gamemode vote when returning to the lobby.
-        /// Requires auto voting to be enabled.  
+        /// Requires auto voting to be enabled.
         public static readonly CVarDef<bool> PresetAutoVoteEnabled =
             CVarDef.Create("vote.preset_autovote_enabled", true, CVar.SERVERONLY);
     }
