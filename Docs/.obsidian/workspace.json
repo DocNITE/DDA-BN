@@ -72,7 +72,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#difficult_easy",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +93,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -183,12 +184,12 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "3c3dd0483b952fec",
+  "active": "2823b2d1bd1fa438",
   "lastOpenFiles": [
-    "Lore/Шахты.md",
-    "TODO_LIST.md",
-    "Game/Боссы.md",
     "README.md",
+    "TODO_LIST.md",
+    "Lore/Шахты.md",
+    "Game/Боссы.md",
     "Lore/Асилиум.md",
     "Угол обзора. Как в RogueTown ROCKHILL. Если персонаж стоит спиной к другим персонажам, он их не видит на экране..md",
     "UI/HUD.md",
