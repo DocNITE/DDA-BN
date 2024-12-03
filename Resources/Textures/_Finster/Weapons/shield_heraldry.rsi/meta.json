@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": ""
+    },
+    {
+      "name": "upra"
+    },
+    {
+      "name": "knave"
+    },
+    {
+      "name": "doomstar"
+    },
+    {
+      "name": "zybantine"
+    },
+    {
+      "name": "slakelar"
+    },
+    {
+      "name": "mogollon"
+    },
+    {
+      "name": "hellcat"
+    },
+    {
+      "name": "mournmoon"
+    },
+    {
+      "name": "coral"
+    },
+    {
+      "name": "vetegir"
+    },
+    {
+      "name": "fortunate"
+    },
+    {
+      "name": "gruhame"
+    },
+    {
+      "name": "magocrat"
+    },
+    {
+      "name": "forlorn"
+    },
+    {
+      "name": "spectrum"
+    },
+    {
+      "name": "appelate"
+    },
+    {
+      "name": "ortodo"
+    },
+    {
+      "name": "sprigger"
+    },
+    {
+      "name": "doglord"
+    },
+    {
+      "name": "runiac"
+    },
+    {
+      "name": "dangler"
+    },
+    {
+      "name": "bokog"
+    },
+    {
+      "name": "eyebiter"
+    },
+    {
+      "name": "elotok"
+    },
+    {
+      "name": "dobrachevyer"
+    },
+    {
+      "name": "frongdor"
+    },
+    {
+      "name": "sumbola"
+    },
+    {
+      "name": "tagil"
+    },
+    {
+      "name": "slaymaster"
+    },
+    {
+      "name": "gouselein"
+    },
+    {
+      "name": "psydonian golden order"
+    },
+    {
+      "name": "Astrata"
+    },
+    {
+      "name": "psydonian silver order"
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": ""
+    },
+    {
+      "name": "longsword"
+    },
+    {
+      "name": "longsword1"
+    },
+    {
+      "name": "polemace"
+    },
+    {
+      "name": "polemace_old"
+    },
+    {
+      "name": "polemace1"
+    },
+    {
+      "name": "polemace1_old"
+    },
+    {
+      "name": "halberd"
+    },
+    {
+      "name": "halberd_old"
+    },
+    {
+      "name": "halberd1"
+    },
+    {
+      "name": "halberd1_old"
+    },
+    {
+      "name": "eaglebeak"
+    },
+    {
+      "name": "eaglebeak_old"
+    },
+    {
+      "name": "eaglebeak1"
+    },
+    {
+      "name": "eaglebeak1_old"
+    },
+    {
+      "name": "gsw"
+    },
+    {
+      "name": "gsw_old"
+    },
+    {
+      "name": "gsw1"
+    },
+    {
+      "name": "gsw1_old"
+    },
+    {
+      "name": "goedendag"
+    },
+    {
+      "name": "goedendag_old"
+    },
+    {
+      "name": "goedendag1"
+    },
+    {
+      "name": "goedendag1_old"
+    },
+    {
+      "name": "bardiche_sk"
+    },
+    {
+      "name": "bardiche_old"
+    },
+    {
+      "name": "bardiche1_sk"
+    },
+    {
+      "name": "bardiche1_old"
+    },
+    {
+      "name": "polehammer_sk"
+    },
+    {
+      "name": "polehammer_old"
+    },
+    {
+      "name": "polehammer1_sk"
+    },
+    {
+      "name": "polehammer1_old"
+    },
+    {
+      "name": "spear_sk"
+    },
+    {
+      "name": "spear"
+    },
+    {
+      "name": "spear1_sk"
+    },
+    {
+      "name": "spear1"
+    },
+    {
+      "name": "stonespear_sk"
+    },
+    {
+      "name": "stonespear"
+    },
+    {
+      "name": "stonespear1_sk"
+    },
+    {
+      "name": "stonespear1"
+    },
+    {
+      "name": "zwei_sk"
+    },
+    {
+      "name": "zwei_old"
+    },
+    {
+      "name": "zwei1_sk"
+    },
+    {
+      "name": "zwei1_old"
+    },
+    {
+      "name": "billhook"
+    },
+    {
+      "name": "billhook_old"
+    },
+    {
+      "name": "billhook1"
+    },
+    {
+      "name": "billhook1_old"
+    },
+    {
+      "name": "longbow"
+    },
+    {
+      "name": "longbow_old"
+    },
+    {
+      "name": "blksword"
+    },
+    {
+      "name": "blksword1"
+    },
+    {
+      "name": "terminusest"
+    },
+    {
+      "name": "terminusest1"
+    },
+    {
+      "name": "exe"
+    },
+    {
+      "name": "exe1"
+    },
+    {
+      "name": "woodstaff"
+    },
+    {
+      "name": "woodstaff1"
+    },
+    {
+      "name": "longgun_0"
+    },
+    {
+      "name": "longgun_b"
+    },
+    {
+      "name": "matchlock"
+    },
+    {
+      "name": "heirloom1"
+    },
+    {
+      "name": "heirloom"
+    },
+    {
+      "name": "tabi"
+    },
+    {
+      "name": "marlin"
+    },
+    {
+      "name": "0,0"
+    },
+    {
+      "name": "1,1"
+    },
+    {
+      "name": "tabi1"
+    },
+    {
+      "name": "marlin1"
+    },
+    {
+      "name": "0,0"
+    },
+    {
+      "name": "0,1"
+    },
+    {
+      "name": "1,1"
+    },
+    {
+      "name": "0,0"
+    },
+    {
+      "name": "1,0"
+    },
+    {
+      "name": "0,1"
+    },
+    {
+      "name": "1,1"
+    },
+    {
+      "name": "2,1"
+    },
+    {
+      "name": "0,2"
+    },
+    {
+      "name": "1,2"
+    },
+    {
+      "name": "2,2"
+    },
+    {
+      "name": "judgement"
+    },
+    {
+      "name": "judgement1"
+    },
+    {
+      "name": "vlord"
+    },
+    {
+      "name": "vlord1"
+    },
+    {
+      "name": "peasantwarflail"
+    },
+    {
+      "name": "peasantwarflail_old"
+    },
+    {
+      "name": "peasantwarflail1"
+    },
+    {
+      "name": "peasantwarflail1_old"
+    },
+    {
+      "name": "Kmesser"
+    },
+    {
+      "name": "Kmesser1"
+    },
+    {
+      "name": "warhammer"
+    },
+    {
+      "name": "warhammer1"
+    },
+    {
+      "name": "pitchfork"
+    },
+    {
+      "name": "hoe"
+    },
+    {
+      "name": "bigflail"
+    },
+    {
+      "name": "bigflail1"
+    },
+    {
+      "name": "zwei"
+    },
+    {
+      "name": "zwei1"
+    },
+    {
+      "name": "bardiche"
+    },
+    {
+      "name": "bardiche1"
+    },
+    {
+      "name": "polehammer"
+    },
+    {
+      "name": "polehammer1"
+    },
+    {
+      "name": "leadpipe"
+    },
+    {
+      "name": "leadpipe1"
+    },
+    {
+      "name": "estoc"
+    },
+    {
+      "name": "estoc1"
+    },
+    {
+      "name": "rapier"
+    },
+    {
+      "name": "decrapier"
+    },
+    {
+      "name": "lordrap"
+    },
+    {
+      "name": "bronzespear"
+    }
+  ]
+}

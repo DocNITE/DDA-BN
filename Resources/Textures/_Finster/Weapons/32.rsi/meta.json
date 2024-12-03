@@ -1,0 +1,495 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "battleaxe_sk"
+    },
+    {
+      "name": "battleaxe_old"
+    },
+    {
+      "name": "smace_sk"
+    },
+    {
+      "name": "smace_old"
+    },
+    {
+      "name": "spiked_club"
+    },
+    {
+      "name": "spiked_club_old"
+    },
+    {
+      "name": "morningstar"
+    },
+    {
+      "name": "idagger_sk"
+    },
+    {
+      "name": "idagger_old"
+    },
+    {
+      "name": "sdagger_sk"
+    },
+    {
+      "name": "sdagger_old"
+    },
+    {
+      "name": "sdaggeralt_sk"
+    },
+    {
+      "name": "sdaggeralt_old"
+    },
+    {
+      "name": "sildagger"
+    },
+    {
+      "name": "sildagger_old"
+    },
+    {
+      "name": "bsword"
+    },
+    {
+      "name": "katar"
+    },
+    {
+      "name": "sword1_sk"
+    },
+    {
+      "name": "sword1_old"
+    },
+    {
+      "name": "sword2_sk"
+    },
+    {
+      "name": "sword2_old"
+    },
+    {
+      "name": "sword3_sk"
+    },
+    {
+      "name": "sword3_old"
+    },
+    {
+      "name": "decsword1_sk"
+    },
+    {
+      "name": "decsword1_old"
+    },
+    {
+      "name": "decsword2_sk"
+    },
+    {
+      "name": "decsword2_old"
+    },
+    {
+      "name": "decsword3_sk"
+    },
+    {
+      "name": "decsword3_old"
+    },
+    {
+      "name": "shortsword_sk"
+    },
+    {
+      "name": "swordshort_old"
+    },
+    {
+      "name": "isword_sk"
+    },
+    {
+      "name": "isword_old"
+    },
+    {
+      "name": "iswordalt"
+    },
+    {
+      "name": "iswordshort_d"
+    },
+    {
+      "name": "iswordshort_sk"
+    },
+    {
+      "name": "iswordshort_old"
+    },
+    {
+      "name": "spikedmace"
+    },
+    {
+      "name": "shield_tower"
+    },
+    {
+      "name": "shield_tower_behind"
+    },
+    {
+      "name": "club1"
+    },
+    {
+      "name": "club2"
+    },
+    {
+      "name": "wsword"
+    },
+    {
+      "name": "crossbow0"
+    },
+    {
+      "name": "crossbow1"
+    },
+    {
+      "name": "crossbow0_old"
+    },
+    {
+      "name": "crossbow1_old"
+    },
+    {
+      "name": "bow"
+    },
+    {
+      "name": "bow_old"
+    },
+    {
+      "name": "bowr"
+    },
+    {
+      "name": "whip"
+    },
+    {
+      "name": "whip_old"
+    },
+    {
+      "name": "gwhip"
+    },
+    {
+      "name": "rapier_sk"
+    },
+    {
+      "name": "rapier"
+    },
+    {
+      "name": "decrapier_sk"
+    },
+    {
+      "name": "decrapier"
+    },
+    {
+      "name": "saber_sk"
+    },
+    {
+      "name": "saber_old"
+    },
+    {
+      "name": "decsabre_sk"
+    },
+    {
+      "name": "decsaber_old"
+    },
+    {
+      "name": "cutlass_sk"
+    },
+    {
+      "name": "cutlass_old"
+    },
+    {
+      "name": "lordrap"
+    },
+    {
+      "name": "falchion_sk"
+    },
+    {
+      "name": "falchion_old"
+    },
+    {
+      "name": "esaber"
+    },
+    {
+      "name": "elfdagger"
+    },
+    {
+      "name": "woodstaff"
+    },
+    {
+      "name": "stonespear_sk"
+    },
+    {
+      "name": "stonespear"
+    },
+    {
+      "name": "cudgel_sk"
+    },
+    {
+      "name": "cudgel"
+    },
+    {
+      "name": "stone_knife"
+    },
+    {
+      "name": "stoneaxe"
+    },
+    {
+      "name": "cleav"
+    },
+    {
+      "name": "saxe_sk"
+    },
+    {
+      "name": "saxe_old"
+    },
+    {
+      "name": "mace_sk"
+    },
+    {
+      "name": "mace_old"
+    },
+    {
+      "name": "huntingknife_sk"
+    },
+    {
+      "name": "huntingknife_old"
+    },
+    {
+      "name": "Cleaver"
+    },
+    {
+      "name": "axe_sk"
+    },
+    {
+      "name": "axe_old"
+    },
+    {
+      "name": "flail_sk"
+    },
+    {
+      "name": "flail_old"
+    },
+    {
+      "name": "iflail_sk"
+    },
+    {
+      "name": "iflail_old"
+    },
+    {
+      "name": "hatchet"
+    },
+    {
+      "name": "aries"
+    },
+    {
+      "name": "scepter",
+      "delays": [
+        [
+          1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "stunmace0"
+    },
+    {
+      "name": "stunmace1",
+      "delays": [
+        [
+          0.15,
+          0.15,
+          0.15,
+          0.15,
+          0.15,
+          0.15
+        ]
+      ]
+    },
+    {
+      "name": "ironsh"
+    },
+    {
+      "name": "ironsh_detail"
+    },
+    {
+      "name": "ironsh_behind"
+    },
+    {
+      "name": "woodsh"
+    },
+    {
+      "name": "woodsh_behind"
+    },
+    {
+      "name": "woodsh_detail"
+    },
+    {
+      "name": "pistol"
+    },
+    {
+      "name": "pistol2"
+    },
+    {
+      "name": "pistol2-1"
+    },
+    {
+      "name": "pistol3"
+    },
+    {
+      "name": "churchmace"
+    },
+    {
+      "name": "combatknife_sk"
+    },
+    {
+      "name": "combatknife"
+    },
+    {
+      "name": "moonlightgs",
+      "delays": [
+        [
+          0.4,
+          0.030000001,
+          0.07,
+          0.01
+        ]
+      ]
+    },
+    {
+      "name": "bucklersh"
+    },
+    {
+      "name": "bucklersh_behind"
+    },
+    {
+      "name": "smesser_sk"
+    },
+    {
+      "name": "imesser_steel"
+    },
+    {
+      "name": "imesser_old"
+    },
+    {
+      "name": "claw_l"
+    },
+    {
+      "name": "claw_r"
+    },
+    {
+      "name": "krieg"
+    },
+    {
+      "name": "estoc"
+    },
+    {
+      "name": "battleaxe"
+    },
+    {
+      "name": "smace"
+    },
+    {
+      "name": "idagger"
+    },
+    {
+      "name": "sdagger"
+    },
+    {
+      "name": "sdaggeralt"
+    },
+    {
+      "name": "sword1"
+    },
+    {
+      "name": "sword2"
+    },
+    {
+      "name": "sword3"
+    },
+    {
+      "name": "decsword1"
+    },
+    {
+      "name": "decsword2"
+    },
+    {
+      "name": "decsword3"
+    },
+    {
+      "name": "shortsword"
+    },
+    {
+      "name": "isword"
+    },
+    {
+      "name": "iswordshort"
+    },
+    {
+      "name": "saber"
+    },
+    {
+      "name": "decsaber"
+    },
+    {
+      "name": "cutlass"
+    },
+    {
+      "name": "falchion"
+    },
+    {
+      "name": "saxe"
+    },
+    {
+      "name": "axe"
+    },
+    {
+      "name": "mace"
+    },
+    {
+      "name": "huntingknife"
+    },
+    {
+      "name": "flail"
+    },
+    {
+      "name": "iflail"
+    },
+    {
+      "name": "smesser"
+    },
+    {
+      "name": "imesser"
+    },
+    {
+      "name": "iscissors"
+    },
+    {
+      "name": "sscissors"
+    },
+    {
+      "name": "iwarhammer"
+    },
+    {
+      "name": "swarhammer"
+    },
+    {
+      "name": "heatershield"
+    },
+    {
+      "name": "heatershield_behind"
+    },
+    {
+      "name": "heatershield_detail"
+    },
+    {
+      "name": "gladius"
+    },
+    {
+      "name": "skinningknife"
+    }
+  ]
+}

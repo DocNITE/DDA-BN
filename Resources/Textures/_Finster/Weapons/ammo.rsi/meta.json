@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": ""
+    },
+    {
+      "name": "arrow_proj"
+    },
+    {
+      "name": "bolt_proj"
+    },
+    {
+      "name": "stonearrow"
+    },
+    {
+      "name": "stonearrow_poison"
+    },
+    {
+      "name": "arrow"
+    },
+    {
+      "name": "arrow_poison"
+    },
+    {
+      "name": "bolt"
+    },
+    {
+      "name": "bolt_poison"
+    },
+    {
+      "name": "quiver1"
+    },
+    {
+      "name": "quiver0"
+    },
+    {
+      "name": "cball"
+    },
+    {
+      "name": "musketball"
+    },
+    {
+      "name": "musketball_proj",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    }
+  ]
+}

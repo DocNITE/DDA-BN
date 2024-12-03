@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": ""
+    },
+    {
+      "name": "tongs"
+    },
+    {
+      "name": "tongsi1"
+    },
+    {
+      "name": "tongsi0"
+    },
+    {
+      "name": "pick"
+    },
+    {
+      "name": "flail"
+    },
+    {
+      "name": "flail1"
+    },
+    {
+      "name": "shovel"
+    },
+    {
+      "name": "dirtshovel"
+    },
+    {
+      "name": "dirte"
+    },
+    {
+      "name": "rod"
+    },
+    {
+      "name": "clawh"
+    },
+    {
+      "name": "hammer"
+    },
+    {
+      "name": "whammer"
+    },
+    {
+      "name": "sickle"
+    },
+    {
+      "name": "pitchfork"
+    },
+    {
+      "name": "pitchforkstuff"
+    },
+    {
+      "name": "hoe"
+    },
+    {
+      "name": "spade"
+    },
+    {
+      "name": "dirtspade"
+    },
+    {
+      "name": "steelpick"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": ""
+    },
+    {
+      "name": "peacemaker"
+    },
+    {
+      "name": "dreamguard"
+    },
+    {
+      "name": "mighty"
+    },
+    {
+      "name": "kemister"
+    },
+    {
+      "name": "shaidal"
+    },
+    {
+      "name": "cursed star"
+    },
+    {
+      "name": "friend of all boys and girls"
+    },
+    {
+      "name": "navigator"
+    },
+    {
+      "name": "bogman"
+    },
+    {
+      "name": "raven"
+    },
+    {
+      "name": "Psydon"
+    },
+    {
+      "name": "Astrata"
+    },
+    {
+      "name": "Hammer Of Malum"
+    }
+  ]
+}
