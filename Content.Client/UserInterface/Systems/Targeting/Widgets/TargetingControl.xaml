@@ -3,8 +3,8 @@
     xmlns:widgets="clr-namespace:Content.Client.UserInterface.Systems.Targeting.Widgets"
     Name="TargetingButton"
     VerticalExpand="True"
-    VerticalAlignment="Bottom"
-    HorizontalAlignment="Right">
+    VerticalAlignment="Top"
+    HorizontalAlignment="Center">
     <Control HorizontalAlignment="Right">
         <TextureRect
             Name="TargetDoll"
