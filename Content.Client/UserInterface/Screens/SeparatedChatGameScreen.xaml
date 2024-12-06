@@ -21,15 +21,15 @@
                 <PanelContainer.PanelOverride>
                     <graphics:StyleBoxFlat BackgroundColor="#191919" BorderColor="#3A3A3A" BorderThickness="1" />
                 </PanelContainer.PanelOverride>
-                <BoxContainer Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <BoxContainer Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 5 0 0">
+                    <hotbar:HotbarGui Name="Hotbar" Access="Protected"/>
                     <inventory:InventoryGui Name="Inventory" Access="Protected"/>
                 </BoxContainer>
             </PanelContainer>
-            <LayoutContainer Name="ViewportContainer" HorizontalExpand="True" VerticalExpand="True">
+            <LayoutContainer Name="ViewportContainer" Access="Public" HorizontalExpand="True" VerticalExpand="True">
                 <controls:MainViewport Name="MainViewport"/>
                 <widgets:GhostGui Name="Ghost" Access="Protected" />
-                <hotbar:HotbarGui Name="Hotbar" Access="Protected"/>
-                <BoxContainer Name="TopLeftContainer" Orientation="Vertical">
+                <BoxContainer Name="TopLeftContainer" Access="Public" Orientation="Vertical">
                     <actions:ActionsBar Name="Actions" Access="Protected" />
                     <BoxContainer Name="VoteMenu" Access="Public" Orientation="Vertical"/>
                 </BoxContainer>

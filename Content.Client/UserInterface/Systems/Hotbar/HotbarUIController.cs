@@ -1,4 +1,5 @@
-﻿using Content.Client.UserInterface.Systems.Gameplay;
+﻿using Content.Client.UserInterface.Screens;
+using Content.Client.UserInterface.Systems.Gameplay;
 using Content.Client.UserInterface.Systems.Hands;
 using Content.Client.UserInterface.Systems.Hands.Controls;
 using Content.Client.UserInterface.Systems.Hotbar.Widgets;
@@ -7,6 +8,7 @@ using Content.Client.UserInterface.Systems.Inventory.Controls;
 using Content.Client.UserInterface.Systems.Inventory.Widgets;
 using Content.Client.UserInterface.Systems.Storage;
 using Content.Client.UserInterface.Systems.Storage.Controls;
+using Content.Shared.Destructible;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controllers;
 
@@ -53,6 +55,24 @@ public sealed class HotbarUIController : UIController
             {
                 // Yes, this is dirty.
                 container.SlotGroup = container.SlotGroup;
+            }
+
+            // Move storage container on viewport screen
+            if (UIManager.ActiveScreen is SeparatedChatGameScreen)
+            {
+                var activeScreen = UIManager.ActiveScreen as SeparatedChatGameScreen;
+                var storageContainer = hotbar._StorageContainer;
+
+                storageContainer!.Parent!.RemoveChild(storageContainer);
+                activeScreen!.TopLeftContainer.AddChild(storageContainer);
+            }
+            else if (UIManager.ActiveScreen is OverlayChatGameScreen)
+            {
+                var activeScreen = UIManager.ActiveScreen as OverlayChatGameScreen;
+                var storageContainer = hotbar._StorageContainer;
+
+                storageContainer!.Parent!.RemoveChild(storageContainer);
+                activeScreen!.TopLeft.AddChild(storageContainer);
             }
         }
 
