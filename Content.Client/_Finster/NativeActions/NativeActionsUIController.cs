@@ -13,9 +13,9 @@ namespace Content.Client._Finster.NativeActions;
 
 public sealed class NativeActionsUIController : UIController, IOnStateEntered<GameplayState>, IOnStateExited<GameplayState>, IOnSystemChanged<CombatModeSystem>
 {
-    [Dependency] private readonly IPlayerManager _playerManager = default!;
-
     [UISystemDependency] private readonly CombatModeSystem _combatSystem = default!;
+
+    private EntityUid? _playerUid;
 
     public override void Initialize()
     {
@@ -49,13 +49,25 @@ public sealed class NativeActionsUIController : UIController, IOnStateEntered<Ga
         _combatSystem.LocalToggleCombatMode();
     }
 
+    public void OnPlayerAttached(EntityUid uid)
+    {
+        _playerUid = uid;
+    }
+
+    public void OnPlayerDetached(EntityUid uid)
+    {
+        if (_playerUid == uid)
+            _playerUid = null;
+    }
     public void OnSystemLoaded(CombatModeSystem system)
     {
-
+        system.LocalPlayerAttached += OnPlayerAttached;
+        system.LocalPlayerDetached += OnPlayerDetached;
     }
 
     public void OnSystemUnloaded(CombatModeSystem system)
     {
-
+        system.LocalPlayerAttached -= OnPlayerAttached;
+        system.LocalPlayerDetached -= OnPlayerDetached;
     }
 }

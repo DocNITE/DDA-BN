@@ -28,8 +28,8 @@ public sealed class CombatModeSystem : SharedCombatModeSystem
     /// </summary>
     public event Action<bool, bool>? LocalPlayerCombatModeHudUpdate;
 
-    public Action? LocalPlayerAttached;
-    public Action? LocalPlayerDetached;
+    public Action<EntityUid>? LocalPlayerAttached;
+    public Action<EntityUid>? LocalPlayerDetached;
 
     public override void Initialize()
     {
@@ -49,12 +49,12 @@ public sealed class CombatModeSystem : SharedCombatModeSystem
 
     private void OnPlayerDetached(EntityUid uid, CombatModeComponent component, LocalPlayerDetachedEvent args)
     {
-        LocalPlayerAttached?.Invoke();
+        LocalPlayerAttached?.Invoke(uid);
     }
 
     private void OnPlayerAttached(EntityUid uid, CombatModeComponent component, LocalPlayerAttachedEvent args)
     {
-        LocalPlayerDetached?.Invoke();
+        LocalPlayerDetached?.Invoke(uid);
     }
 
     public override void Shutdown()

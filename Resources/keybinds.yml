@@ -43,7 +43,7 @@ binds:
   key: S
 - function: Walk
   type: State
-  key: Shift
+  key: R
 # Shuttle
 - function: ShuttleStrafeUp
   type: State
@@ -237,7 +237,7 @@ binds:
   key: H
 - function: OpenCraftingMenu
   type: State
-  key: G
+  key: O
 - function: OpenGuidebook
   type: State
   key: NumpadNum0
@@ -267,11 +267,11 @@ binds:
   key: F
 - function: ToggleStanding
   type: State
-  key: R
+  key: G
 - function: ToggleCrawlingUnder
   type: State
   mod1: Shift
-  key: R
+  key: G
 - function: ToggleCombatMode
   type: State
   key: C
