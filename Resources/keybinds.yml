@@ -186,6 +186,7 @@ binds:
   mod1: Alt
 - function: OpenCharacterMenu
   type: State
+  mod1: Shift
   key: C
 - function: OpenEmotesMenu
   type: State
@@ -271,6 +272,9 @@ binds:
   type: State
   mod1: Shift
   key: R
+- function: ToggleCombatMode
+  type: State
+  key: C
 - function: ShowDebugConsole
   type: State
   key: Tilde
