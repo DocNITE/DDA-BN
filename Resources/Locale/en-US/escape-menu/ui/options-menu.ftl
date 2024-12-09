@@ -154,6 +154,7 @@ ui-options-function-offer-item = Offer something
 ui-options-function-save-item-location = Save item location
 ui-options-function-toggle-standing = Toggle standing
 ui-options-function-toggle-crawling-under = Toggle crawling under furniture
+ui-options-function-toggle-combat-mode = Toggle combat mode
 ui-options-static-storage-ui = Lock storage window to hotbar
 
 ui-options-function-smart-equip-backpack = Smart-equip to backpack

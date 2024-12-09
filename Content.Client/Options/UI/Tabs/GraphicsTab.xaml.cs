@@ -61,12 +61,6 @@ namespace Content.Client.Options.UI.Tabs
                 UpdateViewportScale();
             };
 
-            ViewportWidthSlider.OnValueChanged += _ =>
-            {
-                UpdateViewportWidthDisplay();
-                UpdateApplyButton();
-            };
-
             ViewportVerticalFitCheckBox.OnToggled += _ =>
             {
                 UpdateViewportScale();
@@ -89,7 +83,7 @@ namespace Content.Client.Options.UI.Tabs
             ViewportLowResCheckBox.Pressed = !_cfg.GetCVar(CCVars.ViewportScaleRender);
             ParallaxLowQualityCheckBox.Pressed = _cfg.GetCVar(CCVars.ParallaxLowQuality);
             FpsCounterCheckBox.Pressed = _cfg.GetCVar(CCVars.HudFpsCounterVisible);
-            ViewportWidthSlider.Value = _cfg.GetCVar(CCVars.ViewportWidth);
+            //ViewportWidthSlider.Value = _cfg.GetCVar(CCVars.ViewportWidth);
 
             _cfg.OnValueChanged(CCVars.ViewportMinimumWidth, _ => UpdateViewportWidthRange());
             _cfg.OnValueChanged(CCVars.ViewportMaximumWidth, _ => UpdateViewportWidthRange());
@@ -122,7 +116,7 @@ namespace Content.Client.Options.UI.Tabs
             _cfg.SetCVar(CCVars.ViewportScaleRender, !ViewportLowResCheckBox.Pressed);
             _cfg.SetCVar(CCVars.ParallaxLowQuality, ParallaxLowQualityCheckBox.Pressed);
             _cfg.SetCVar(CCVars.HudFpsCounterVisible, FpsCounterCheckBox.Pressed);
-            _cfg.SetCVar(CCVars.ViewportWidth, (int) ViewportWidthSlider.Value);
+            //_cfg.SetCVar(CCVars.ViewportWidth, (int) ViewportWidthSlider.Value);
 
             _cfg.SaveToFile();
             UpdateApplyButton();
@@ -152,7 +146,7 @@ namespace Content.Client.Options.UI.Tabs
             var isVPResSame = ViewportLowResCheckBox.Pressed == !_cfg.GetCVar(CCVars.ViewportScaleRender);
             var isPLQSame = ParallaxLowQualityCheckBox.Pressed == _cfg.GetCVar(CCVars.ParallaxLowQuality);
             var isFpsCounterVisibleSame = FpsCounterCheckBox.Pressed == _cfg.GetCVar(CCVars.HudFpsCounterVisible);
-            var isWidthSame = (int) ViewportWidthSlider.Value == _cfg.GetCVar(CCVars.ViewportWidth);
+            //var isWidthSame = (int) ViewportWidthSlider.Value == _cfg.GetCVar(CCVars.ViewportWidth);
 
             ApplyButton.Disabled = isVSyncSame &&
                                    isFullscreenSame &&
@@ -164,8 +158,8 @@ namespace Content.Client.Options.UI.Tabs
                                    isVPVerticalFitSame &&
                                    isVPResSame &&
                                    isPLQSame &&
-                                   isFpsCounterVisibleSame &&
-                                   isWidthSame;
+                                   isFpsCounterVisibleSame;
+                                   //isWidthSame;
         }
 
         private bool ConfigIsFullscreen =>
@@ -246,7 +240,7 @@ namespace Content.Client.Options.UI.Tabs
             ViewportScaleBox.Visible = !ViewportStretchCheckBox.Pressed;
             IntegerScalingCheckBox.Visible = ViewportStretchCheckBox.Pressed;
             ViewportVerticalFitCheckBox.Visible = ViewportStretchCheckBox.Pressed;
-            ViewportWidthSlider.Visible = ViewportWidthSliderDisplay.Visible = !ViewportStretchCheckBox.Pressed || ViewportStretchCheckBox.Pressed && !ViewportVerticalFitCheckBox.Pressed;
+            //ViewportWidthSlider.Visible = ViewportWidthSliderDisplay.Visible = !ViewportStretchCheckBox.Pressed || ViewportStretchCheckBox.Pressed && !ViewportVerticalFitCheckBox.Pressed;
             ViewportScaleText.Text = Loc.GetString("ui-options-vp-scale", ("scale", ViewportScaleSlider.Value));
         }
 
@@ -255,13 +249,13 @@ namespace Content.Client.Options.UI.Tabs
             var min = _cfg.GetCVar(CCVars.ViewportMinimumWidth);
             var max = _cfg.GetCVar(CCVars.ViewportMaximumWidth);
 
-            ViewportWidthSlider.MinValue = min;
-            ViewportWidthSlider.MaxValue = max;
+            //ViewportWidthSlider.MinValue = min;
+            //ViewportWidthSlider.MaxValue = max;
         }
 
         private void UpdateViewportWidthDisplay()
         {
-            ViewportWidthSliderDisplay.Text = Loc.GetString("ui-options-vp-width", ("width", (int) ViewportWidthSlider.Value));
+            //ViewportWidthSliderDisplay.Text = Loc.GetString("ui-options-vp-width", ("width", (int) ViewportWidthSlider.Value));
         }
     }
 }
