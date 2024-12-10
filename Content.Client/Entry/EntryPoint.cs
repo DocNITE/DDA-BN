@@ -168,7 +168,7 @@ namespace Content.Client.Entry
             // TODO: Any players can join on the server from another forks. Need make replacement feature on RWs hud icons
             //_userInterfaceManager.SetActiveTheme(_configManager.GetCVar(CVars.InterfaceTheme));
             _userInterfaceManager.SetActiveTheme("SS14LoraAshenTheme");
-            _configManager.SetCVar(CCVars.ToggleWalk, true);
+            //_configManager.SetCVar(CCVars.ToggleWalk, true);
 
             _documentParsingManager.Initialize();
             _joinQueue.Initialize();
