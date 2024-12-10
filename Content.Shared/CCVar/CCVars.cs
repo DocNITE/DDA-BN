@@ -1907,6 +1907,9 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<bool> ViewportVerticalFit =
             CVarDef.Create("viewport.vertical_fit", true, CVar.CLIENTONLY | CVar.ARCHIVE);
 
+        public static readonly CVarDef<string> ViewportFilter =
+            CVarDef.Create("viewport.filter", "LoraNoise", CVar.CLIENTONLY | CVar.ARCHIVE);
+
         /*
          * FOV
          */

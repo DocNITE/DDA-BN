@@ -66,6 +66,7 @@ ui-options-lighting-low = Low
 ui-options-lighting-medium = Medium
 ui-options-lighting-high = High
 ui-options-scale-label = UI Scale:
+ui-options-filter-label = Viewport Filter:
 ui-options-scale-auto = Automatic ({ TOSTRING($scale, "P0") })
 ui-options-scale-75 = 75%
 ui-options-scale-100 = 100%
