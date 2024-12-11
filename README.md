@@ -1,8 +1,10 @@
-<p align="center">
+
 # FUCK THIS! 
 By some political things and resource performance, repository has been moved into [Codeberg Repository](https://codeberg.org/DocNITE/Finster-14.git)
 Also, some indviduum can send strike on that repository, like ONIKS. I don't wanna lost my repository, so - bye bye GitHub!
-</p>
+
+---
+
 
 <p align="center"><img src="./Raw/splashlogo/splashlogo.png" width="512px" /></p>
 
