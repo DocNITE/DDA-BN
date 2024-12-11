@@ -1,19 +1,25 @@
+using System.Numerics;
 using Content.Client.CombatMode;
 using Content.Client.Gameplay;
 using Content.Client.UserInterface.Systems.Gameplay;
+using Content.Client.UserInterface.Systems.NativeActions.Controls;
+using Content.Client.UserInterface.Systems.NativeActions.Widgets;
 using Content.Shared.CombatMode;
 using Content.Shared.Input;
 using Robust.Client.Player;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controllers;
+using Robust.Client.UserInterface.Controls;
 using Robust.Shared.Input.Binding;
 using Robust.Shared.Player;
 
-namespace Content.Client._Finster.NativeActions;
+namespace Content.Client.UserInterface.Systems;
 
 public sealed class NativeActionsUIController : UIController, IOnStateEntered<GameplayState>, IOnStateExited<GameplayState>, IOnSystemChanged<CombatModeSystem>
 {
     [UISystemDependency] private readonly CombatModeSystem _combatSystem = default!;
+
+    private NativeActionsGui? _nativeActionsGui;
 
     private EntityUid? _playerUid;
 
@@ -29,6 +35,8 @@ public sealed class NativeActionsUIController : UIController, IOnStateEntered<Ga
     {
         if (UIManager.ActiveScreen == null)
             return;
+
+        ReloadActions();
     }
 
     public void OnStateEntered(GameplayState state)
@@ -44,14 +52,48 @@ public sealed class NativeActionsUIController : UIController, IOnStateEntered<Ga
         CommandBinds.Unregister<CombatModeSystem>();
     }
 
-    public void ToggleCombatMode()
-    {
-        _combatSystem.LocalToggleCombatMode();
-    }
-
     public void OnPlayerAttached(EntityUid uid)
     {
         _playerUid = uid;
+
+        ReloadButtons();
+    }
+
+    public void ReloadActions()
+    {
+        if (UIManager.ActiveScreen == null)
+            return;
+
+        if (UIManager.ActiveScreen.GetWidget<NativeActionsGui>() is { } nativeActions)
+        {
+            if (_nativeActionsGui == null)
+                _nativeActionsGui = nativeActions;
+        }
+    }
+
+    public void ToggleCombatMode(bool ignoreButton = true)
+    {
+        if (_nativeActionsGui != null && !ignoreButton)
+            _nativeActionsGui.CombatModeButton.Toggle();
+
+        _combatSystem.LocalToggleCombatMode();
+    }
+
+    // TODO: It might be moved into prototype definition
+    public void ReloadButtons()
+    {
+        if (UIManager.ActiveScreen == null)
+            return;
+
+        if (UIManager.ActiveScreen.GetWidget<NativeActionsGui>() is { } nativeActions)
+        {
+
+        }
+    }
+
+    public CombatModeSystem ResolveCombatSystem()
+    {
+        return _combatSystem;
     }
 
     public void OnPlayerDetached(EntityUid uid)

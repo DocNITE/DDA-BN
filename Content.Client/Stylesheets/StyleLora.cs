@@ -424,7 +424,7 @@ namespace Content.Client.Stylesheets
             var loraBold16 = resCache.LoraStack(variation: "Bold", size: 16);
             var loraBold18 = resCache.LoraStack(variation: "Bold", size: 18);
             var loraBold20 = resCache.LoraStack(variation: "Bold", size: 20);
-            var notoSansMono = resCache.GetFont("/EngineFonts/NotoSans/NotoSansMono-Regular.ttf", size: 12);
+            var goMono = resCache.GetFont("/Fonts/GoMono/GoMonoNerdFontMono-Regular.ttf", size: 12);
             var windowHeaderTex = resCache.GetTexture("/Textures/Interface/Lora/window_header.png");
             var windowHeader = new StyleBoxTexture
             {
@@ -758,7 +758,8 @@ namespace Content.Client.Stylesheets
             var sliderFillBlue = new StyleBoxTexture(sliderFillBox) { Modulate = Color.Blue };
             var sliderFillWhite = new StyleBoxTexture(sliderFillBox) { Modulate = Color.White };
 
-            var boxFont13 = resCache.GetFont("/Fonts/Boxfont-round/Boxfont Round.ttf", 13);
+            var blackmoorFont13 = resCache.GetFont("/Fonts/BlackmoorLet/BlackmoorLet.ttf", 18);
+            var blackmoorFont14 = resCache.GetFont("/Fonts/BlackmoorLet/BlackmoorLet.ttf", 18);
 
             var insetBack = new StyleBoxTexture
             {
@@ -786,14 +787,14 @@ namespace Content.Client.Stylesheets
             Stylesheet = new Stylesheet(BaseRules.Concat(new[]
             {
                 Element().Class("monospace")
-                    .Prop("font", notoSansMono),
+                    .Prop("font", goMono),
                 // Window title.
                 new StyleRule(
                     new SelectorElement(typeof(Label), new[] {DefaultWindow.StyleClassWindowTitle}, null, null),
                     new[]
                     {
                         new StyleProperty(Label.StylePropertyFontColor, LoraPurple),
-                        new StyleProperty(Label.StylePropertyFont, loraDisplayBold14),
+                        new StyleProperty(Label.StylePropertyFont, blackmoorFont14),
                     }),
                 // Alert (white) window title.
                 new StyleRule(
@@ -801,7 +802,7 @@ namespace Content.Client.Stylesheets
                     new[]
                     {
                         new StyleProperty(Label.StylePropertyFontColor, Color.White),
-                        new StyleProperty(Label.StylePropertyFont, loraDisplayBold14),
+                        new StyleProperty(Label.StylePropertyFont, blackmoorFont14),
                     }),
                 // Window background.
                 new StyleRule(
@@ -1651,7 +1652,7 @@ namespace Content.Client.Stylesheets
 
                 // Window Headers
                 Element<Label>().Class("FancyWindowTitle")
-                    .Prop("font", boxFont13)
+                    .Prop("font", blackmoorFont13)
                     .Prop("font-color", LoraPurple),
 
                 Element<PanelContainer>().Class("WindowHeadingBackground")
